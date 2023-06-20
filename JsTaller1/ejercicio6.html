@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Figuras Geométricas</title>
+  <link rel="stylesheet" href="css/ejercicio6.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Cálculo de Figuras Geométricas</h1>
+
+  <div class="card">
+    <h2>Círculo</h2>
+    <button onclick="abrirModal('circulo')">Perímetro</button>
+    <button onclick="abrirModal('circulo')">Área</button>
+  </div>
+
+  <div class="card">
+    <h2>Triángulo</h2>
+    <button onclick="abrirModal('triangulo')">Perímetro</button>
+    <button onclick="abrirModal('triangulo')">Área</button>
+  </div>
+
+  <div class="card">
+    <h2>Rectángulo</h2>
+    <button onclick="abrirModal('rectangulo')">Perímetro</button>
+    <button onclick="abrirModal('rectangulo')">Área</button>
+  </div>
+
+  <div class="card">
+    <h2>Cuadrado</h2>
+    <button onclick="abrirModal('cuadrado')">Perímetro</button>
+    <button onclick="abrirModal('cuadrado')">Área</button>
+  </div>
+
+  <!-- Ventana Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-title" id="modal-title"></span>
+      <input type="number" class="modal-input" id="base" placeholder="Base">
+      <input type="number" class="modal-input" id="altura" placeholder="Altura">
+      <input type="number" class="modal-input" id="radio" placeholder="Radio">
+      <input type="number" class="modal-input" id="lado" placeholder="Lado">
+      <button onclick="cerrarModal()" class="modal-button">Cerrar</button>
+      <button id="calcular-btn" class="modal-button">Calcular</button>
+      <div id="resultado"></div>
+    </div>
+  </div>
+
+  <script src="js/ejercicio6.js"></script>
+</body>
+</html>
