@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Figuras Geométricas</title>
+  <link rel="stylesheet" href="./css/ejercicio6.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Volver</a></li>
+        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+        <li><a href="eventos.html">Ejercicio 2</a></li>
+        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+        <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+        <li><a href="ejercicio7.html">Ejercicio 7</a></li>
+      </ul>
+
+  <h1>Figuras Geométricas</h1>
+
+  <div class="container">
+    <div class="card" id="circleCard">
+      <h2>Círculo</h2>
+      <div class="buttons">
+        <button onclick="openModal('circle')">Perímetro</button>
+        <button onclick="openModal('circle')">Área</button>
+      </div>
+    </div>
+
+    <div class="card" id="triangleCard">
+      <h2>Triángulo</h2>
+      <div class="buttons">
+        <button onclick="openModal('triangle')">Perímetro</button>
+        <button onclick="openModal('triangle')">Área</button>
+      </div>
+    </div>
+
+    <div class="card" id="rectangleCard">
+      <h2>Rectángulo</h2>
+      <div class="buttons">
+        <button onclick="openModal('rectangle')">Perímetro</button>
+        <button onclick="openModal('rectangle')">Área</button>
+      </div>
+    </div>
+
+    <div class="card" id="squareCard">
+      <h2>Cuadrado</h2>
+      <div class="buttons">
+        <button onclick="openModal('square')">Perímetro</button>
+        <button onclick="openModal('square')">Área</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody">
+        <label for="input1">Lado / Radio:</label>
+        <input type="number" id="input1">
+        <br>
+        <label for="input2">Base:</label>
+        <input type="number" id="input2">
+        <br>
+        <label for="input3">Altura:</label>
+        <input type="number" id="input3">
+        <br>
+        <div class="modal-buttons">
+          <button onclick="calculate()" id="calculateButton">Calcular</button>
+          <button onclick="closeModal()">Cerrar</button>
+        </div>
+      </div>
+      <h3 id="result"></h3>
+    </div>
+  </div>
+
+  <script src="./js/ejercicio6.js"></script>
+</body>
+</html>
