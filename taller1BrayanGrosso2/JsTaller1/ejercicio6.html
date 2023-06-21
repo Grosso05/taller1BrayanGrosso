@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styleplantilla.css">
+    <link rel="stylesheet" href="css/stylereto6.css">
+</head>
+<body>
+    <main class="form-signin w-100 m-auto">
+        <div class="cards">
+            <div class="circulo">
+                <h2>Circulo</h2>
+                <img src="img/circulo.png" alt="circulo"><br>
+
+                
+                <button id="btncalACirculo" class="button">Calcular area</button> 
+                    <br> <br>
+
+                <button id="btncalPCirculo" class="button">Calcular Perimetro</button>
+            </div>
+                
+            <div class="triangulo">
+                <h2>Triangulo</h2>
+                <img src="img/triangulo.png" alt="triangulo"><br>
+                
+                <button id="btncalATrian" class="button">Calcular area</button> <br> <br>
+
+                <button id="btncalPTrian" class="button">Calcular Perimetro</button>
+            </div>
+
+            <div class="rectangulo">
+                <h2>Rectangulo</h2>
+                <img src="img/rectangulo.png" alt="rectangulo"><br>
+                
+                <button id="btncalARectan" class="button">Calcular area</button> <br> <br>
+
+                <button id="btncalPRectan" class="button">Calcular Perimetro</button>
+            </div>
+
+            <div class="cuadrado">
+                <h2>Cuadrado</h2>
+                <img src="img/cuadrado.png" alt="cuadrado" id="cuadrado"><br>
+                
+                <button id="btncalACuadrado" class="button">Calcular area</button> <br> <br>
+
+                <button id="btncalPCuadrado" class="button">Calcular Perimetro</button>
+            </div>
+    </div>
+
+    </main>
+</section>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!---Ventana Modal para calcular el area del circulo-->
+    <div id="ventanaModal" class="modal">
+
+        <div id="contenidoModal" class="contenidoModales">
+
+            <span class="cerrarModal">X</span>
+            <h2>Calcular area del circulo</h2>
+            <div class="ACirculo" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="ACirculo">Ingrese el radio del ciruclo</label>
+                            <input type="text" id="ACirculo" name="ACirculo">
+                        </div>
+                        <div>
+                            <button id="btnACirculo" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultACirculo" class="mensaje"></span></div>
+                    </form>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <!---Ventana Modal para calcular el perimetro del circulo-->
+    <div id="ventanaModalCP" class="modal">
+
+        <div id="contenidoModalCP" class="contenidoModales">
+
+            <span class="cerrarModalCP">X</span>
+            <h2>Calcular perimetro del circulo</h2>
+            <div class="PCirculo" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="PCirculo">Ingrese el radio del ciruclo</label>
+                            <input type="text" id="PCirculo" name="PCirculo">
+                        </div>
+                        <div>
+                            <button id="btnPCirculo" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultPCirculo" class="mensaje"></span></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!---Ventana Modal para calcular el area del triangulo-->
+    <div id="ventanaModalTA" class="modal">
+
+        <div id="contenidoModalTA" class="contenidoModales">
+
+            <span class="cerrarModalTA">X</span>
+            <h2>Calcular area del triangulo</h2>
+            <div class="ATriangulo" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="ATriangulo">Ingrese la altura del ciruclo</label>
+                            <input type="text" id="ATriangulo" name="ATriangulo">
+                        </div>
+                        <div>
+                            <label for="BTriangulo">Ingrese la base del ciruclo</label>
+                            <input type="text" id="BTriangulo" name="BTriangulo">
+                        </div>
+                        <div>
+                            <button id="btnATriangulo" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultATriangulo" class="mensaje"></span></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+    <div id="ventanaModalTP" class="modal">
+
+        <div id="contenidoModalTP" class="contenidoModales">
+
+            <span class="cerrarModalTP">X</span>
+            <h2>Calcular perimetro del triangulo</h2>
+            <div class="PTriangulo" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="lado1">Ingrese la longitud del lado 1</label>
+                            <input type="text" id="lado1" name="lado1">
+                        </div>
+                        <div>
+                            <label for="lado2">Ingrese la longitud del lado 2</label>
+                            <input type="text" id="lado2" name="lado2">
+                        </div>
+                        <div>
+                            <label for="lado3">Ingrese la longitud del lado 3</label>
+                            <input type="text" id="lado3" name="lado3">
+                        </div>
+                        <div>
+                            <button id="btnPTriangulo" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultPTriangulo" class="mensaje"></span></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="ventanaModalRA" class="modal">
+
+        <div id="contenidoModalRA" class="contenidoModales">
+
+            <span class="cerrarModalRA">X</span>
+            <h2>Calcular area del rectangulo</h2>
+            <div class="ARectangulo" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="alturaR">Ingrese la altura del rectangulo</label>
+                            <input type="text" id="alturaR" name="alturaR">
+                        </div>
+                        <div>
+                            <label for="baseR">Ingrese la base del rectangulo</label>
+                            <input type="text" id="baseR" name="baseR">
+                        </div>
+
+                        <div>
+                            <button id="btnARectangulo" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultARectangulo" class="mensaje"></span></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="ventanaModalRP" class="modal">
+
+        <div id="contenidoModalRP" class="contenidoModales">
+
+            <span class="cerrarModalRP">X</span>
+            <h2>Calcular perimetro del rectangulo</h2>
+            <div class="PRectangulo" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="lado1R">Ingrese la longitud del lado1 del rectangulo</label>
+                            <input type="text" id="lado1R" name="lado1R">
+                        </div>
+                        <div>
+                            <label for="lado2R">Ingrese la longitud del lado2 del rectangulo</label>
+                            <input type="text" id="lado2R" name="lado2R">
+                        </div>
+
+                        <div>
+                            <button id="btnPRectangulo" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultPRectangulo" class="mensaje"></span></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="ventanaModalCuA" class="modal">
+
+        <div id="contenidoModalCuA" class="contenidoModales">
+
+            <span class="cerrarModalCuA">X</span>
+            <h2>Calcular area del cuadrado</h2>
+            <div class="ACuadrado" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="ladoCu">Ingrese la longitud del lado del cuadrado</label>
+                            <input type="text" id="ladoCu" name="ladoCu">
+                        </div>
+
+                        <div>
+                            <button id="btnACuadrado" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultACuadrado" class="mensaje"></span></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="ventanaModalCuP" class="modal">
+
+        <div id="contenidoModalCuP" class="contenidoModales">
+
+            <span class="cerrarModalCuP" class="cerrarModales">X</span>
+            <h2>Calcular perimetro del cuadrado</h2>
+            <div class="PCuadrado" class="formulario">
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="ladoCuP">Ingrese la longitud del lado del cuadrado</label>
+                            <input type="text" id="ladoCuP" name="ladoCuP">
+                        </div>
+
+                        <div>
+                            <button id="btnPCuadrado" class="button">Calcular</button>
+                        </div>
+                        <div><span id="resultPCuadrado" class="mensaje"></span></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javaScript" src="js/reto6.js"></script>
+</body>
+</html>
+
+
+
