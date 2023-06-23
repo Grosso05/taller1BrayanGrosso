@@ -1,0 +1,250 @@
+html {
+    height: 100%;
+    
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: 'Playfair', serif;
+    
+  }
+
+    
+  .login-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .login-box h2{
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  .parrafo{
+    color: #fff;
+    font-family: 'Playfair', serif;
+  }
+  
+/* Estilos para la barra de herramientas */
+.toolbar {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #243b55;
+    overflow: hidden;
+    border-bottom: 10px solid #243b55;;
+    }
+    
+/* Estilos para los botones de la barra de herramientas */
+.toolbar button {
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #243b55;
+    border: 10px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+.boton:hover {
+    background-color: #000000;
+    color: #03e9f4;
+    }
+    .boton:active {
+    transform: translateY(1px);
+    box-shadow: none;
+    }
+    
+header{
+    display: flex;
+    border: 10px solid #243b55;
+    padding-left: 40px;
+
+}
+img{
+    width: 200px;
+}
+.nombre{
+    margin-top: 10px;
+    font-family: 'Concert One', cursive;
+    font-size: 100px;
+    padding-left: 200px;
+}
+.herramientas{
+text-align: center;
+
+}
+
+
+
+/*Estilos boton*/
+
+.login-box form #btncal {
+
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 15px;
+    letter-spacing: 4px
+  }
+  
+  
+
+  .login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+
+
+  .login-box #btncal span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box #btncal span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+
+
+/*Input*/
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+  
+label{
+    color: #000000;
+    
+}
+
+
+.select-custom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: #9fff85;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  .select-custom::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    transition: all 0.3s ease;
+  }
+  
+  .select-custom select {
+    appearance: none;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .select-custom select:focus + .select-custom::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .select-custom select option {
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  
+.modal{
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  padding-top: 250px;
+  display: none;
+
+}
+
+
+.contenidoModales{
+  margin-top: 100px;
+  padding-top:30px ;
+  background-color: #92ff8c;
+  width: 500px;
+  margin: auto;
+  animation-name: animarModal;
+  animation-duration: 1s;
+  
+
+}
+
+
+  
+h2{
+  font-family: 'Wix Madefor Display', sans-serif;
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
